@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Daur Ulang Sampah Rumah Tangga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4CAF50; /* Mengubah latar belakang menjadi hijau */
+        }
+        header {
+            background-color: #c0a16c;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex; /* Menggunakan flexbox untuk menyusun gambar dan teks */
+            align-items: center; /* Menyelaraskan item secara vertikal */
+            justify-content: center; /* Menyelaraskan item secara horizontal */
+        }
+        header img {
+            width: 85px; /* Mengatur lebar gambar */
+            height: auto; /* Memastikan tinggi gambar proporsional */
+            margin-right: 15px; /* Memberikan jarak antara gambar dan teks */
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        .navbar a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #555; /* Default hover color */
+        }
+        h1, h2 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: normal;
+        }
+        main {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="daurulang.html"> <img src="popo.png" alt="Logo"> </a> <!-- Menambahkan tag <a> untuk membuat gambar menjadi tautan -->
+        <div>
+        <h1>Informasi Daur Ulang Sampah Rumah Tangga</h1>
+        <h2>(Kompos / Pengomposan)</h2>
+    </div>
+</header>
+<nav class="navbar">
+    <a href="how-it-works.html">Kategori</a>
+    <a href="berita.html">Berita</a>
+    <a href="pricing.html">Layanan</a>
+    <a href="help.html">Help</a>
+</nav>
+<main>
+    <div class="section">
+        <h3>Tentang Pengomposan</h3>
+    <img src="lopi.png" alt="Gambar Pengomposan" style="width: 100%; height: auto; margin-bottom: 20px;">
+    <p>
+        Pengomposan adalah proses alami yang mengubah bahan organik menjadi kompos yang kaya nutrisi. 
+        Proses ini melibatkan mikroorganisme, seperti bakteri dan jamur, yang memecah bahan organik 
+        menjadi humus, yang dapat digunakan sebagai pupuk untuk tanaman.
+    </p>
+    </div>
+    
+    <div class="section">
+        <h3>Manfaat Pengomposan</h3>
+        <ul>
+            <li>Mengurangi jumlah sampah yang dibuang ke tempat pembuangan akhir.</li>
+            <li>Meningkatkan kualitas tanah.</li>
+            <li>Menurunkan kebutuhan akan pupuk kimia.</li>
+            <li>Menghemat biaya pengelolaan sampah.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Cara Membuat Kompos</h3>
+        <p>
+            Berikut adalah langkah-langkah sederhana untuk membuat kompos di rumah:
+        </p>
+        <ol>
+            <li>Kumpulkan bahan organik seperti sisa sayuran, kulit buah, dan daun kering.</li>
+            <li>Siapkan wadah kompos, bisa berupa tempat khusus atau tumpukan di tanah.</li>
+            <li>Campurkan bahan basah (sisa sayur) dan bahan kering (daun kering) dengan perbandingan 2:1.</li>
+            <li>Jaga kelembapan, jangan terlalu basah atau kering.</li>
+            <li>Balik kompos setiap beberapa minggu untuk mempercepat proses.</li>
+            <li>Setelah 2-3 bulan, kompos siap digunakan.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h3>Jenis Bahan yang Bisa Didaur Ulang</h3>
+        <p>
+            Beberapa bahan organik yang cocok untuk kompos adalah:
+        </p>
+        <ul>
+            <li>Sisa sayuran dan buah-buahan</li>
+            <li>Kulit telur</li>
+            <li>Daun kering dan rumput</li>
+            <li>Serbuk gergaji (tanpa bahan kimia)</li>
+        </ul>
+    </div>
+</main>
+
+<footer>
+    <p>© 2024 Informasi Daur Ulang. Semua Hak Dilindungi.</p>
+</footer>
+<script>
+    const navbarLinks = document.querySelectorAll('.navbar a');
+
+    navbarLinks.forEach(link => {
+        link.addEventListener('mouseover', () => {
+            const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            link.style.backgroundColor = randomColor;
+        });
+
+        link.addEventListener('mouseout', () => {
+            link.style.backgroundColor = ''; // Reset to default
+        });
+    });
+</script>
+
+</body>
+</html>

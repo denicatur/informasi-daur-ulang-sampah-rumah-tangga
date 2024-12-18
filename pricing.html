@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Daur Ulang Sampah Rumah Tangga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4CAF50; /* Mengubah latar belakang menjadi hijau */
+        }
+        header {
+            background-color: #c0a16c;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex; /* Menggunakan flexbox untuk menyusun gambar dan teks */
+            align-items: center; /* Menyelaraskan item secara vertikal */
+            justify-content: center; /* Menyelaraskan item secara horizontal */
+        }
+        header img {
+            width: 85px; /* Mengatur lebar gambar */
+            height: auto; /* Memastikan tinggi gambar proporsional */
+            margin-right: 15px; /* Memberikan jarak antara gambar dan teks */
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        .navbar a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #555; /* Default hover color */
+        }
+        h1, h2 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: normal;
+        }
+        main {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+         /* Efek salju */
+         .snowflake {
+            position: fixed; /* Menutupi seluruh layar */
+            top: -10px;
+            color: white;
+            pointer-events: none; /* Salju tidak mengganggu elemen lain */
+            font-size: 1em;
+            animation: fall linear infinite;
+            z-index: 1000; /* Menampilkan di atas elemen lain */
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="daurulang.html"> <img src="popo.png" alt="Logo"> </a>
+    <div>
+        <h1>Informasi Daur Ulang Sampah Rumah Tangga</h1>
+        <h2>(Kompos / Pengomposan)</h2>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="how-it-works.html">Kategori</a>
+    <a href="berita.html">Berita</a>
+    <a href="pricing.html">Layanan</a>
+    <a href="help.html">Team</a>
+</nav>
+
+<main>
+    <div class="container">
+        <p>IDUSRT didirikan pada tahun 2024, terdaftar sebagai lembaga non-profit yang terdiri dari lebih 500 anggota terdaftar. Organisasi ini membentuk ekosistem rantai daur ulang sampah rumah tangga terbesar di Indonesia dari hulu ke hilir, mulai dari kelompok pengepul, bank sampah, hingga ke industri daur ulangnya sendiri. Selain itu, IDUSRT juga melibatkan akademisi dan praktisi daur ulang yang aktif berkontribusi dalam pengelolaan sampah rumah tangga di Indonesia.</p>
+        <div style="text-align: center;">
+            <img src="visi.png" alt="Gambar Pengomposan" style="width: 10%; height: auto; margin-bottom: 20px;">
+        </div>
+        <h2>Visi</h2>
+        <p>"Menjadi pelopor pengelolaan sampah rumah tangga yang berkelanjutan di Indonesia melalui inovasi, edukasi, dan kolaborasi, untuk menciptakan lingkungan yang bersih dan sehat bagi generasi mendatang."</p>
+
+        <h2>Misi</h2>
+        <ul>
+            <li>Mengembangkan ekosistem daur ulang sampah rumah tangga dari hulu ke hilir, melibatkan pengepul, bank sampah, dan industri daur ulang.</li>
+            <li>Meningkatkan kesadaran masyarakat melalui edukasi tentang pentingnya pengelolaan sampah yang bertanggung jawab.</li>
+            <li>Mendukung inovasi teknologi daur ulang untuk memaksimalkan nilai tambah dari sampah rumah tangga.</li>
+            <li>Mendorong kolaborasi lintas sektor, termasuk dengan akademisi, praktisi, pemerintah, dan masyarakat untuk menciptakan solusi pengelolaan sampah yang berkelanjutan.</li>
+            <li>Memperkuat jaringan anggota IDUSRT untuk membangun komunitas yang tangguh dan mandiri dalam mengelola sampah rumah tangga.</li>
+        </ul>
+    </div>
+</main>
+
+<footer>
+    <p>© 2024 Informasi Daur Ulang. Semua Hak Dilindungi.</p>
+</footer>
+<script>
+    // Efek salju
+    function createSnowflake() {
+        const snowflake = document.createElement('div');
+        snowflake.className = 'snowflake';
+        snowflake.textContent = '​🍀';
+        snowflake.style.left = Math.random() * 100 + 'vw';
+        snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; // Waktu jatuh acak
+        snowflake.style.fontSize = Math.random() * 1.5 + 0.5 + 'em';
+        document.body.appendChild(snowflake);
+
+        setTimeout(() => {
+            snowflake.remove();
+        }, 5000); // Hapus elemen setelah selesai animasi
+    }
+
+    setInterval(createSnowflake, 300);
+    </script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Daur Ulang Sampah Rumah Tangga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4CAF50; /* Mengubah latar belakang menjadi hijau */
+        }
+
+        header {
+            background-color: #c0a16c;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header img {
+            width: 85px;
+            height: auto;
+            margin-right: 15px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        h1, h2 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        main {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .price {
+            color: #f39c12;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        .button:hover {
+            background-color: #3e8e41;
+        }
+
+        .title-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+         /* Efek salju */
+         .snowflake {
+            position: fixed; /* Menutupi seluruh layar */
+            top: -10px;
+            color: white;
+            pointer-events: none; /* Salju tidak mengganggu elemen lain */
+            font-size: 1em;
+            animation: fall linear infinite;
+            z-index: 1000; /* Menampilkan di atas elemen lain */
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="daurulang.html">
+        <img src="popo.png" alt="Logo">
+    </a>
+    <div>
+        <h1>Informasi Daur Ulang Sampah Rumah Tangga</h1>
+        <h2>(Kompos / Pengomposan)</h2>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="how-it-works.html">Kategori</a>
+    <a href="berita.html">Berita</a>
+    <a href="pricing.html">Layanan</a>
+    <a href="help.html">Team</a>
+</nav>
+
+<main>
+    <div class="title-container">
+        <h1>Jenis Sampah</h1>
+    </div>
+
+    <div class="button-container">
+        <button class="button" onclick="showPlastik()">Kategori Plastik</button>
+        <button class="button" onclick="showKertas()">Kategori Kertas</button>
+        <button class="button" onclick="showSisaMakanan()">Kategori Sisa Makanan</button>
+    </div>
+
+    <div class="container" id="produkContainer">
+        <!-- Sampah Plastik -->
+        <div class="card plastik">
+            <h4>Daur Ulang Sampah Plastik dan Daur Ulang Botol Plastik</h4>
+            <div style="text-align: center;">
+                <img src="plastik.png" alt="Gambar Pengomposan" style="width: 50%; height: auto; margin-bottom: 20px;">
+            </div>
+            <p>Cara Daur Ulang Sampah Plastik dan Daur Ulang Botol Plastik
+                Sampah plastik merupakan salah satu sampah terbesar yang ada di rumah. Jenis sampah ini sangat sulit untuk terurai secara alami sehingga wajib untuk kita daur ulang.
+                
+                Proses untuk daur ulang sampah plastik cukup mudah dan bisa Anda lakukan di rumah. Jika Anda tertarik, maka Anda bisa melakukan hal berikut ini: </p>
+            <ul>
+                <li>Kumpulkan dan sortir sampah plastik: Langkah pertama yang perlu Anda lakukan adalah dengan mengumpulkan dan menyortir sampah plastik. Pisahkan sampah plastik ini berdasarkan jenis-jenisnya seperti botol plastik, kantong plastik, dan jenis lain.</li>
+                <li>Cuci sampah plastik: Langkah berikutnya yang perlu Anda lakukan adalah dengan mencuci sampah plastik yang sudah dikumpulkan. Tujuannya adalah untuk menghilangkan kotoran dan bahan kimia seperti lem yang ada di sampah tersebut.</li>
+                <li>Kreasikan sesuai keinginan Anda: Setelah semuanya bersih, Anda bisa membuat berbagai barang sesuai keinginan Anda. Potong atau gabungkan dengan sampah plastik lain agar bisa menjadi barang yang bisa dipakai kembali.</li>
+
+            </ul>
+            <p>Salah satu contoh sampah plastik yang paling banyak di setiap rumah dan mudah untuk dikreasikan adalah botol plastik. Jika Anda memiliki banyak botol plastik di rumah, maka saran kami adalah untuk tidak membuangnya. Ada banyak barang menarik yang bisa Anda buat dari proses daur ulang botol plastik, seperti:</p>
+            <ul>
+            <li>Daur ulang menjadi pot lucu: Botol plastik bisa Anda daur ulang untuk menjadi pot bunga yang lucu. Anda cukup memotong setengah bagian botol, isi dengan tanah, dan tanam bunga Anda.</li>
+            <li>Membuat celengan: Celengan bisa dengan mudah kita buat dengan menggunakan botol plastik. Buat sedikit lubang yang ada di botol sebagai tempat untuk memasukkan uang Anda.</li>
+            <li>Tempat menyimpan makanan: Botol plastik juga bisa Anda manfaatkan sebagai tempat untuk menyimpan makanan dan cemilan kecil. Jangan lupa untuk cuci bersih terlebih dahulu botol plastik ini sebelum digunakan.</li>
+            </ul>
+            <p><a href="https://www.cleanipedia.com/id/pengertian-dan-manfaat-daur-ulang.html">Daur Ulang Sampah: Pengertian dan Manfaatnya</a></p>
+        </div>
+
+        <!-- Sampah Kertas -->
+        <div class="card kertas" style="display:none;">
+            <h4>Cara mendaur ulang kertas bekas di rumah</h4>
+            <div style="text-align: center;">
+                <img src="pk.png" alt="Gambar Pengomposan" style="width: 50%; height: auto; margin-bottom: 20px;">
+            </div>
+            <p>
+                Jika kita tidak bisa terlalu bergantung pada pengumpulan sampah kolektif, bagaimana cara mendaur ulang kertas sendiri? Ikuti cara-caranya di bawah ini.
+            </p>
+            <ul>
+                <li>Gunakan sebagai kompos. Kertas bekas berperan penting dalam proses pembuatan kompos. Jika Anda tidak memiliki tempat pengomposan sendiri, cukup sobek-sobek kertas bekas menjadi potongan-potongan kecil dan sebarkan di sekeliling tanaman Anda. Cara ini membantu menjaga kelembapan tanah Anda dan menambah nutrisi ke dalam tanah.</li>
+                <li>Gunakan sebagai bahan pembungkus. Cara yang ini sudah umum digunakan sebagai cara mendaur ulang koran. Kertas bekas dan koran bisa digunakan untuk menyumpal kardus atau barang pecah belah ketika Anda pindahan, membungkus barang yang disimpan di gudang, atau membungkus kiriman paket.</li>
+                <li>Ubah menjadi kertas baru. Cara yang ini sudah dikenal jauh lebih lama di Indonesia sebagai cara membuat kertas daur ulang. Cara ini adalah salah satu kegiatan prakarya populer bagi anak-anak. Kegiatan ini juga mendidik karena meniru proses daur ulang kertas di pabrik daur ulang.</li>
+            </ul>
+            <p><a href="https://www.cleanipedia.com/id/kepedulian-lingkungan/cara-mendaur-ulang-kertas-bekas-di-rumah.html">Cara mendaur ulang kertas bekas di rumah</a></p>
+        </div>
+
+        <!-- Sampah Sisa Makanan -->
+        <div class="card SisaMakanan" style="display:none;">
+            <h4>Cara mendaur ulang sisa makanan</h4>
+            <div style="text-align: center;">
+                <img src="xx.png" alt="Gambar Pengomposan" style="width: 50%; height: auto; margin-bottom: 20px;">
+            </div>
+            <p>
+                Limbah sayur dan buah adalah jenis sampah organik yang dapat membusuk dan menghasilkan gas metana jika terkubur dalam tumpukan sampah konvensional. Dengan mengelolanya melalui kompos, kita dapat mengurangi emisi gas rumah kaca.
+Membuat kompos dari sampah sayur dan buah memiliki manfaat ganda. Pertama, mengurangi volume sampah yang masuk ke tempat pembuangan akhir. Kedua, menghasilkan pupuk alami yang kaya akan nutrisi bagi tanaman.
+            </p>
+            <p>Alat dan bahan yang dibutuhkan dalam pembuatan kompos yaitu wadah berukuran besar dengan penutup, sarung tangan, sampah organik, tanah, air, arang sekam, kapur, dan cairan pupuk EM4. Berikut cara pembuatan kompos dari sisa makanan :            </p>
+            <ul>
+                <li> Masukkan tanah secukupnya ke dalam wadah yang berisi sampah organik</li>
+                <li>Siram permukaan tanah dengan air secukupnya</li>
+                <li>Masukkan sampah organik yang dicampur arang sekam dan kapur</li>
+                <li> Siram permukaan tanah dengan air yang telah dicampur pupuk organik EM4</li>
+                <li>Masukkan tanah kembali ke dalam wadah</li>
+                <li> Tutup bagian atas wadah dengan aluminium foil</li>
+                <li>Aduk pupuk secara rutin seminggu sekali</li>
+                <li> Simpan di tempat yang terhindar dari paparan sinar matahari dan air hujan</li>
+                <li>Pupuk siap dipakai setelah 6 minggu.</li>
+            </ul>
+            <p><a href="https://www.hellymedia.com/gaya-hidup/79210365455/membuat-kompos-dari-sampah-sayur-dan-buah-mengurangi-limbah-dan-membantu-lingkungan">Membuat Kompos dari Sampah Sayur dan Buah: Mengurangi Limbah dan Membantu Lingkungan</a></p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>2024 Informasi Daur Ulang. Semua Hak Dilindungi.</p>
+</footer>
+
+<script>
+    function showPlastik() {
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.display = 'none';
+        });
+        document.querySelectorAll('.plastik').forEach(card => {
+            card.style.display = 'block';
+        });
+    }
+
+    function showKertas() {
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.display = 'none';
+        });
+        document.querySelectorAll('.kertas').forEach(card => {
+            card.style.display = 'block';
+        });
+    }
+
+    function showSisaMakanan() {
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.display = 'none';
+        });
+        document.querySelectorAll('.SisaMakanan').forEach(card => {
+            card.style.display = 'block';
+        });
+    }
+</script>
+<script>
+    // Efek salju
+    function createSnowflake() {
+        const snowflake = document.createElement('div');
+        snowflake.className = 'snowflake';
+        snowflake.textContent = '​🍀';
+        snowflake.style.left = Math.random() * 100 + 'vw';
+        snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; // Waktu jatuh acak
+        snowflake.style.fontSize = Math.random() * 1.5 + 0.5 + 'em';
+        document.body.appendChild(snowflake);
+
+        setTimeout(() => {
+            snowflake.remove();
+        }, 5000); // Hapus elemen setelah selesai animasi
+    }
+
+    setInterval(createSnowflake, 300);
+    </script>
+</body>
+</html>

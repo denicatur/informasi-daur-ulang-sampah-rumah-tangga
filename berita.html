@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Daur Ulang Sampah Rumah Tangga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4CAF50; /* Mengubah latar belakang menjadi hijau */
+        }
+        header {
+            background-color: #c0a16c;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex; /* Menggunakan flexbox untuk menyusun gambar dan teks */
+            align-items: center; /* Menyelaraskan item secara vertikal */
+            justify-content: center; /* Menyelaraskan item secara horizontal */
+        }
+        header img {
+            width: 85px; /* Mengatur lebar gambar */
+            height: auto; /* Memastikan tinggi gambar proporsional */
+            margin-right: 15px; /* Memberikan jarak antara gambar dan teks */
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        .navbar a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #555; /* Default hover color */
+        }
+        h1, h2 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: normal;
+        }
+        main {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .search-bar {
+            position: relative;
+            width: 70%;
+            margin: 20px auto;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            color: black;
+            font-size: 16px;
+        }
+
+        .search-bar button {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-results {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .search-result {
+            background-color: #f7f7f7;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .search-result h3 {
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .search-result p {
+            margin-top: 5px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .search-result a {
+            color: #2196F3;
+            text-decoration: none;
+        }
+
+    
+        .search-result .source a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .search-result .source a:hover {
+            text-decoration: underline;
+        }
+         /* Efek salju */
+         .snowflake {
+            position: fixed; /* Menutupi seluruh layar */
+            top: -10px;
+            color: white;
+            pointer-events: none; /* Salju tidak mengganggu elemen lain */
+            font-size: 1em;
+            animation: fall linear infinite;
+            z-index: 1000; /* Menampilkan di atas elemen lain */
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="daurulang.html"> <img src="popo.png" alt="Logo"> </a>
+    <div>
+        <h1>Informasi Daur Ulang Sampah Rumah Tangga</h1>
+        <h2>(Kompos / Pengomposan)</h2>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="how-it-works.html">Kategori</a>
+    <a href="berita.html">Berita</a>
+    <a href="pricing.html">Layanan</a>
+    <a href="help.html">Team</a>
+</nav>
+
+    <main> 
+        <div class="section"> 
+           <h3>Berita</h3>
+            <div class="search-results">
+                <div class="search-result">
+                    <h3><a href="https://www.rri.co.id/iptek/1179953/inovasi-dan-kolaborasi-umkm-daur-ulang-sampah-plastik">Inovasi dan Kolaborasi UMKM Daur Ulang Sampah Plastik</a></h3>
+                    <p>KBRN,Lhokseumawe : Dalam upaya menciptakan solusi berkelanjutan untuk pengelolaan sampah plastik, Pusat Unggulan Iptek Perguruan Tinggi...</p>
+                </div>
+                <div class="search-result">
+                    <h3><a href="https://kominfo.jatimprov.go.id/berita/mahasiswa-istts-daur-ulang-kertas-jadi-buku-catatan-kecil">Mahasiswa ISTTS Daur Ulang Kertas Jadi Buku Catatan Kecil</a></h3>
+                    <p>Mahasiswa ISTTS Daur Ulang Kertas Jadi Buku Catatan Kecil ... Saat ditemui usai memaparkan produk ciptaannya di Kampus ISTTS pada Senin (3/6/2024)...</p>
+                </div>
+                <div class="search-result">
+                    <h3><a href="https://kumparan.com/aulia-azh/pemanfaatan-limbah-pasar-sayur-menggunakan-em4-bersama-masyarakat-desa-kepuharjo-225YS6UbeJJ">Pemanfaatan Limbah Pasar Sayur Menggunakan EM4 Bersama Masyarakat Desa Kepuharjo
+                    </a></h3>
+                    <p>Artikel online kelompok 41 PMM Universitas Muhammadiyah Malang mencakup informasi kegiatan pemanfaatan limbah sayur pasar menjadi pupuk...</p>
+                </div>
+                <div class="search-result">
+                    <h3><a href="https://jatengprov.go.id/beritadaerah/permudah-pengelolaan-pilah-sampah-agar-dimulai-dari-rumah/">Permudah Pengelolaan, Pilah Sampah Agar Dimulai dari Rumah
+                    </a></h3>
+                    <p>KUDUS – Tim Penggerak (TP) PKK diminta untuk terlibat dalam masalah pemilahan sampah di tingkat rumah tangga...</p>
+                </div>
+            </div>
+        </div> 
+    </main> 
+<footer> 
+    <p> 2024 Informasi Daur Ulang. Semua Hak Dilindungi.</p> 
+</footer>
+<script>
+    // Efek salju
+    function createSnowflake() {
+        const snowflake = document.createElement('div');
+        snowflake.className = 'snowflake';
+        snowflake.textContent = '​🍀';
+        snowflake.style.left = Math.random() * 100 + 'vw';
+        snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; // Waktu jatuh acak
+        snowflake.style.fontSize = Math.random() * 1.5 + 0.5 + 'em';
+        document.body.appendChild(snowflake);
+
+        setTimeout(() => {
+            snowflake.remove();
+        }, 5000); // Hapus elemen setelah selesai animasi
+    }
+
+    setInterval(createSnowflake, 300);
+    </script> 
+</body> 
+</html>

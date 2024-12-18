@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Daur Ulang Sampah Rumah Tangga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4CAF50; /* Latar belakang hijau */
+        }
+        header {
+            background-color: #c0a16c;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header img {
+            width: 85px;
+            height: auto;
+            margin-right: 15px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        .navbar a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #555;
+        }
+        main {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Jarak antar kotak */
+            
+        }
+        .anggota {
+            width: 250px; /* Perbesar ukuran kotak */
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px; /* Sudut sedikit membulat */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            font-size: 16px;
+            position: relative;
+            
+        }
+        .anggota:nth-child(odd) {
+            background-color: #f0f8ff; /* Warna biru sangat terang untuk kotak ganjil */
+            margin-top: 30px; /* Buat posisi zigzag */
+        }
+        .anggota:nth-child(even) {
+            background-color: #e6ffe6; /* Warna hijau terang untuk kotak genap */
+            margin-bottom: 30px; /* Buat posisi zigzag */
+        }
+        .anggota img {
+            width: 150px; /* Perbesar ukuran foto */
+            height: 150px;
+            margin-bottom: 10px;
+            border: 5px solid #ddd; /* Bingkai abu-abu tipis di sekitar foto */
+            border-radius: 8px; /* Foto kotak dengan sudut membulat */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+         /* Efek salju */
+         .snowflake {
+            position: fixed; /* Menutupi seluruh layar */
+            top: -10px;
+            color: white;
+            pointer-events: none; /* Salju tidak mengganggu elemen lain */
+            font-size: 1em;
+            animation: fall linear infinite;
+            z-index: 1000; /* Menampilkan di atas elemen lain */
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay>
+        <source src="lagu.mp3" type="audio/mpeg"> <!-- Ganti 'lagu.mp3' dengan nama file lagu Anda -->
+        Your browser does not support the audio element.
+    </audio>
+
+<header>
+    <a href="daurulang.html"> <img src="popo.png" alt="Logo"> </a>
+    <div>
+        <h1>Informasi Daur Ulang Sampah Rumah Tangga</h1>
+        <h2>(Kompos / Pengomposan)</h2>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="how-it-works.html">Kategori</a>
+    <a href="berita.html">Berita</a>
+    <a href="pricing.html">Layanan</a>
+    <a href="help.html">Team</a>
+</nav>
+    
+<main>
+    <h1>Kelompok IDUSRT</h1>
+    <div class="container">
+        <div class="anggota">
+            <img src="idris.jpg" alt="Deni">
+            <p>1. Deni Catur Cahyadi</p>
+            <p>202243502702</p>
+        </div>
+        <div class="anggota">
+            <img src="saipul.jpg" alt="Rendi">
+            <p>2. Rendi Hari Saputra</p>
+            <p>202243502657</p>
+        </div>
+        <div class="anggota">
+            <img src="yaman.jpg" alt="Farhan">
+            <p>3. Farhan Febriansyah</p>
+            <p>202243502690</p>
+        </div>
+        <div class="anggota">
+            <img src="aan.jpg" alt="Rizky">
+            <p>4. Muhammad Rizky</p>
+            <p>202243502649</p>
+        </div>
+        <div class="anggota">
+            <img src="salman.jpg" alt="Raka">
+            <p>5. Raka Dhafaiz Choir</p>
+            <p>202243502645</p>
+        </div>
+        <div class="anggota">
+            <img src="dustin.jpg" alt="Faturohman">
+            <p>6. Fathur Rohman Solih</p>
+            <p>202243502665</p>
+        </div>
+    </div>
+</main>
+    
+<footer>
+    <p>© 2024 Informasi Daur Ulang. Semua Hak Dilindungi.</p>
+</footer>
+<script>
+    // Efek salju
+    function createSnowflake() {
+        const snowflake = document.createElement('div');
+        snowflake.className = 'snowflake';
+        snowflake.textContent = '​🍀';
+        snowflake.style.left = Math.random() * 100 + 'vw';
+        snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; // Waktu jatuh acak
+        snowflake.style.fontSize = Math.random() * 1.5 + 0.5 + 'em';
+        document.body.appendChild(snowflake);
+
+        setTimeout(() => {
+            snowflake.remove();
+        }, 5000); // Hapus elemen setelah selesai animasi
+    }
+
+    setInterval(createSnowflake, 300);
+    </script>
+</body>
+</html>

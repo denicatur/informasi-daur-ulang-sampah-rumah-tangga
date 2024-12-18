@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Daur Ulang Sampah Rumah Tangga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4CAF50; /* Latar belakang hijau */
+            overflow-x: hidden; /* Hapus overflow horizontal */
+        }
+        header {
+            background-color: #c0a16c;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header img {
+            width: 85px;
+            height: auto;
+            margin-right: 15px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        .navbar a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+        h1, h2 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: normal;
+        }
+        main {
+            padding: 20px;
+            background-color: white;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            display: flex; /* Menggunakan flexbox */
+            flex-direction: column; /* Mengatur arah kolom */
+            align-items: center; /* Mengatur item agar rata di tengah */
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Memastikan section mengambil lebar penuh */
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Efek salju */
+        .snowflake {
+            position: fixed; /* Menutupi seluruh layar */
+            top: -10px;
+            color: white;
+            pointer-events: none; /* Salju tidak mengganggu elemen lain */
+            font-size: 1em;
+            animation: fall linear infinite;
+            z-index: 1000; /* Menampilkan di atas elemen lain */
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="daurulang.html">
+        <img src="popo.png" alt="Logo Informasi Daur Ulang">
+    </a>
+    <div>
+        <h1>Informasi Daur Ulang Sampah Rumah Tangga</h1>
+        <h2>(Kompos / Pengomposan)</h2>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="how-it-works.html">Kategori</a>
+    <a href="berita.html">Berita</a>
+    <a href="pricing.html">Layanan</a>
+    <a href="help.html">Team</a>
+</nav>
+
+<main>
+    <div>
+        <img src="lopi.png" alt="Ilustrasi Proses Daur Ulang" style="max-width: 100%; height: auto; border-radius: 8px; display: block; margin: 0 auto;">
+    </div>
+
+    <div class="section">
+        <h3>Tentang Pengomposan</h3>
+        <p>
+            Pengomposan adalah proses alami yang mengubah bahan organik menjadi kompos yang kaya akan nutrisi. Proses ini melibatkan aktivitas mikroorganisme seperti bakteri, jamur, dan organisme pengurai lainnya, yang bekerja secara bertahap memecah bahan organik menjadi humus. Bahan-bahan yang digunakan dalam pengomposan umumnya berasal dari sisa-sisa tumbuhan dan hewan, seperti daun kering, sisa sayuran, jerami, potongan rumput, kulit buah, dan kotoran hewan. Agar proses pengomposan berjalan optimal, diperlukan keseimbangan antara bahan kaya karbon (cokelat) dan bahan kaya nitrogen (hijau), di mana bahan kaya karbon berfungsi sebagai sumber energi bagi mikroorganisme, sementara bahan kaya nitrogen membantu mempercepat proses dekomposisi.
+        </p>
+        <p>Manfaat dari pengomposan tidak hanya terbatas pada penyediaan pupuk alami yang sangat baik untuk mendukung pertumbuhan tanaman, tetapi juga membantu mengurangi jumlah sampah organik yang berakhir di tempat pembuangan akhir (TPA). Dengan mengolah limbah organik menjadi kompos, kita turut berkontribusi dalam mengurangi emisi gas rumah kaca yang dihasilkan dari pembusukan sampah organik di TPA. Selain itu, penggunaan kompos dapat memperbaiki struktur tanah, meningkatkan kapasitas tanah dalam menyimpan air, serta mengurangi ketergantungan pada pupuk kimia, menjadikannya solusi ramah lingkungan yang berkelanjutan.</p>
+    </div>
+
+    <div class="section">
+        <h3>Manfaat Pengomposan</h3>
+        <ul>
+            <li>Mengurangi jumlah sampah yang dibuang ke tempat pembuangan akhir.</li>
+            <li>Meningkatkan kualitas tanah.</li>
+            <li>Menurunkan kebutuhan akan pupuk kimia.</li>
+            <li>Menghemat biaya pengelolaan sampah.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Bahan yang Cocok untuk Pengomposan</h3>
+        <ul>
+            <li>Sisa makanan (sayuran, buah, kulit telur)</li>
+            <li>Daun kering dan potongan rumput</li>
+            <li>Kertas tidak berwarna (tanpa tinta beracun)</li>
+        </ul>
+    </div>
+</main>
+
+<footer>
+    <p>© 2024 Informasi Daur Ulang. Semua Hak Dilindungi.</p>
+</footer>
+
+<script>
+    // Efek warna acak pada navbar
+    const navbarLinks = document.querySelectorAll('.navbar a');
+
+    navbarLinks.forEach(link => {
+        link.addEventListener('mouseover', () => {
+            const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            link.style.backgroundColor = randomColor;
+        });
+
+        link.addEventListener('mouseout', () => {
+            link.style.backgroundColor = ''; // Reset ke default
+        });
+    });
+
+    // Efek salju
+    function createSnowflake() {
+        const snowflake = document.createElement('div');
+        snowflake.className = 'snowflake';
+        snowflake.textContent = '​🍀';
+        snowflake.style.left = Math.random() * 100 + 'vw';
+        snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; // Waktu jatuh acak
+        snowflake.style.fontSize = Math.random() * 1.5 + 0.5 + 'em';
+        document.body.appendChild(snowflake);
+
+        setTimeout(() => {
+            snowflake.remove();
+        }, 5000); // Hapus elemen setelah selesai animasi
+    }
+
+    setInterval(createSnowflake, 300);
+</script>
+
+</body>
+</html>
